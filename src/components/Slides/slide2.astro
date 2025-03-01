@@ -1,0 +1,90 @@
+---
+import backgroundPixel from '../../assets/backgroundPixel.webp'
+import integration from '../../assets/integration.svg'
+---
+
+<div class="h-full w-full overflow-hidden relative">
+  <!-- Content -->
+  <div class="container mx-auto relative h-full">
+    <div
+      class="flex items-center justify-center h-full gap-25 flex-col text-center text-amber-50"
+    >
+      <div
+        class="mr-auto [&>ul]:prose-md [&>h2]:prose-2xl [&>h2]:text4x1 [&>h2]:mt-4 [&>h2]:my-2 [&>ul>li>p]:my-0 [&>ul>li]:my-0 [&>ul]:m-0 [&>h2]:!text-amber-50 [&>h2]:text-left [&>ul>*]:!text-amber-50 [&>ul>*]:text-left"
+      >
+        <h1 class="prose-2xl text-6xl text-left !text-amber-50">
+          Posibles integraciones
+        </h1>
+
+        <p class="prose text-base text-left !text-amber-50">
+          Astro permite integraciones con facilidad al tener estructura limpia y
+          directa con el HTML. A continuación estas integraciones cuentan con
+          soporte oficial en la documentación:
+        </p>
+
+        <h2>Frameworks</h2>
+        <ul>
+          <li>
+            <p>Alpine.js</p>
+          </li>
+          <li>
+            <p>Preact</p>
+          </li>
+          <li>
+            <p>react</p>
+          </li>
+          <li>
+            <p>Solidjs</p>
+          </li>
+          <li>
+            <p>Svelte</p>
+          </li>
+          <li>
+            <p>Vue</p>
+          </li>
+        </ul>
+
+        <h2>Adaptadores</h2>
+        <ul>
+          <li>
+            <p>Cloudflare</p>
+          </li>
+          <li>
+            <p>Netlify</p>
+          </li>
+          <li>
+            <p>Node</p>
+          </li>
+          <li>
+            <p>Vecel</p>
+          </li>
+        </ul>
+
+        <h2>Servicios Backend</h2>
+        <ul>
+          <li>
+            <p>Firebase</p>
+          </li>
+          <li>
+            <p>Sentry</p>
+          </li>
+          <li>
+            <p>Supabase</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image -->
+  <img
+    src={integration.src}
+    alt="EstefanoC Pulpoline Integration"
+    class="w-1/2 h-1/2 bottom-16 right-0 absolute"
+  />
+  <img
+    src={backgroundPixel.src}
+    alt="EstefanoC Pulpoline Background"
+    class="w-screen h-screen top-0 left-0 absolute -z-10"
+  />
+</div>

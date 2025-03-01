@@ -1,0 +1,41 @@
+---
+import Logo from '../assets/Logo.svg'
+
+const navbar = [
+  {
+    name: 'Presentación',
+    url: '/',
+  },
+  { name: 'Ejemplos', url: '/ejemplo' },
+]
+---
+
+<header
+  class="w-screen bg-amber-50/90 z-50 shadow-2xl fixed top-0 backdrop-blur-lg h-16 flex items-center justify-center"
+>
+  <a
+    class="no-underline w-16 h-full m-0 max-md:mr-auto md:absolute md:left-4"
+    href="/"
+  >
+    <img
+      id="background"
+      class="w-16 h-full"
+      src={Logo.src}
+      alt="EstefanoC"
+      fetchpriority="high"
+    />
+  </a>
+
+  <nav class="flex items-center w-full justify-center gap-6">
+    {
+      navbar.map((item) => (
+        <a
+          class="prose font-bold no-underline bg-amber-100 rounded-lg px-4 py-2 hover:scale-105 transition-all shadow-2xs border border-amber-400"
+          href={item.url}
+        >
+          {item.name}
+        </a>
+      ))
+    }
+  </nav>
+</header>

@@ -1,0 +1,51 @@
+---
+import Slide1 from './Slides/slide1.astro'
+import Slide2 from './Slides/slide2.astro'
+---
+
+<div
+  class="swiper w-screen h-[calc(theme(height.screen)-theme(spacing.16))] top-16"
+>
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides 3 -->
+    <div class="swiper-slide">
+      Ventajas de uso SEO Facilidades y el crecimiento del uso del framwork
+    </div>
+    <!-- Slides 1 -->
+    <div class="swiper-slide"><Slide1 /></div>
+    <!-- Slides 2 -->
+    <div class="swiper-slide"><Slide2 /></div>
+    <div class="swiper-slide">Como funciona</div>
+    <div class="swiper-slide">Ultimas caracteristicas añadidas</div>
+  </div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-pagination [&>*]:!bg-amber-50"></div>
+</div>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<script
+  is:inline
+  src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script is:inline>
+  if (typeof window !== 'undefined') {
+    new Swiper('.swiper', {
+      direction: 'vertical',
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    })
+  }
+</script>
