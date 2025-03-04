@@ -1,6 +1,4 @@
 ---
-import background from '../assets/background.svg'
-
 import ExampleReact from './Examples/react'
 import ExampleVue from './Examples/vue.vue'
 ---
@@ -190,7 +188,12 @@ function decrement() &#123;
   </div>
 
   <!-- Images -->
-  <img id="background" src={background.src} alt="" fetchpriority="high" />
+  <img
+    id="background"
+    src="/Astro/assets/background.svg"
+    alt=""
+    fetchpriority="high"
+  />
 </div>
 
 <style>
