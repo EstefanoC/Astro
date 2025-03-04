@@ -1,6 +1,9 @@
 ---
-import backgroundPixel from '../../assets/backgroundPixel.webp'
+import Vue from '../../assets/vue.svg'
+import Node from '../../assets/node.svg'
+import React from '../../assets/react.svg'
 import integration from '../../assets/integration.svg'
+import backgroundPixel from '../../assets/backgroundPixel.webp'
 ---
 
 <div class="h-full w-full overflow-hidden relative">
@@ -10,13 +13,13 @@ import integration from '../../assets/integration.svg'
       class="flex items-center justify-center h-full gap-25 flex-col text-center text-amber-50"
     >
       <div
-        class="mr-auto [&>ul]:prose-md [&>h2]:prose-2xl [&>h2]:text4x1 [&>h2]:mt-4 [&>h2]:my-2 [&>ul>li>p]:my-0 [&>ul>li]:my-0 [&>ul]:m-0 [&>h2]:!text-amber-50 [&>h2]:text-left [&>ul>*]:!text-amber-50 [&>ul>*]:text-left"
+        class="mr-auto [&>ul]:prose-md [&>h2]:prose-2xl [&>h2]:text-3xl [&>h2]:mt-4 [&>h2]:my-2 [&>ul>li>p]:my-0 [&>ul>li]:my-0 [&>ul]:m-0 [&>h2]:!text-amber-50 [&>h2]:text-left [&>ul>*]:!text-amber-50 [&>ul>*]:text-xl [&>ul>*]:text-left"
       >
         <h1 class="prose-2xl text-6xl text-left !text-amber-50">
           Posibles integraciones
         </h1>
 
-        <p class="prose text-base text-left !text-amber-50">
+        <p class="prose text-xl text-left !text-amber-50">
           Astro permite integraciones con facilidad al tener estructura limpia y
           directa con el HTML. A continuación estas integraciones cuentan con
           soporte oficial en la documentación:
@@ -78,6 +81,21 @@ import integration from '../../assets/integration.svg'
 
   <!-- Image -->
   <img
+    src={Vue.src}
+    alt="EstefanoC Pulpoline Vue"
+    class="w-25 h-25 top-60 right-1/4 absolute"
+  />
+  <img
+    src={Node.src}
+    alt="EstefanoC Pulpoline Node"
+    class="w-18 h-18 top-40 right-1/2 absolute"
+  />
+  <img
+    src={React.src}
+    alt="EstefanoC Pulpoline React"
+    class="w-16 h-16 top-20 right-40 absolute"
+  />
+  <img
     src={integration.src}
     alt="EstefanoC Pulpoline Integration"
     class="w-1/2 h-1/2 bottom-16 right-0 absolute"
@@ -85,6 +103,6 @@ import integration from '../../assets/integration.svg'
   <img
     src={backgroundPixel.src}
     alt="EstefanoC Pulpoline Background"
-    class="w-screen h-screen top-0 left-0 absolute -z-10"
+    class="w-screen h-screen top-0 left-0 absolute -z-10 scale-105"
   />
 </div>

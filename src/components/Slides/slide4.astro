@@ -1,0 +1,60 @@
+---
+import important from '../../assets/important.svg'
+import backgroundLines from '../../assets/backgroundLines.webp'
+---
+
+<div class="h-full w-full overflow-hidden relative">
+  <!-- Content -->
+  <div class="container mx-auto relative h-full">
+    <div
+      class="flex items-center justify-center h-full gap-25 flex-col text-center text-amber-50"
+    >
+      <div
+        class="ml-auto [&>h2]:prose-2xl pt-50 [&>h2]:text4x1 [&>h2]:mt-4 [&>h2]:my-2 [&>h2]:!text-amber-50 [&>h2]:text-right"
+      >
+        <h1 class="prose-2xl text-6xl text-right !text-amber-50">
+          Características más importantes
+        </h1>
+
+        <p
+          class="prose max-w-3/6 text-xl pb-5 text-right !text-amber-50 ml-auto"
+        >
+          <strong class="!text-amber-50 font-bold pr-3">Rutas dinámicas:</strong
+          > Las página en Astro pueden incluir parámetros dinámicos, para crear múltiples
+          páginas asociadas. Existe el modo de renderización en tiempo de compilación,
+          y en modo SSR que se generan bajo demanda.
+        </p>
+
+        <p class="prose max-w-3/6 text-xl text-left !text-amber-50 mr-auto">
+          <strong class="!text-amber-50 font-bold pr-3">Server Islands:</strong>
+          Son componentes aislados que cargan en paralelo con el html estático, con
+          la finalidad de optimizar la carga de contenido, esto se raliza del lado
+          del servidor al momento de construir la página.
+        </p>
+
+        <p
+          class="prose max-w-3/6 text-xl pb-5 text-right !text-amber-50 ml-auto"
+        >
+          <strong class="!text-amber-50 font-bold pr-3">Soporte a .md:</strong>
+          Permite crear contenido extenso como artículos y documentación, con soporte
+          para metadatos personalizados y características adicionales como expresiones
+          JavaScript. Puedes utilizar cualquiera de los dos formatos para escribir
+          tu contenido.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image -->
+  <img
+    src={important.src}
+    alt="EstefanoC Pulpoline Integration"
+    class="w-2/5 h-2/5 top-0 left-5 absolute"
+  />
+
+  <img
+    src={backgroundLines.src}
+    alt="EstefanoC Pulpoline Background"
+    class="w-screen h-screen top-1/2 -translate-y-1/2 left-0 blur-[10px] opacity-20 absolute -z-10"
+  />
+</div>

@@ -1,0 +1,59 @@
+---
+import functionality from '../../assets/functionality.svg'
+import backgroundColor from '../../assets/backgroundColor.webp'
+---
+
+<div class="h-full w-full overflow-hidden relative">
+  <!-- Content -->
+  <div class="container mx-auto relative h-full">
+    <div
+      class="flex items-center justify-center h-full gap-25 flex-col text-center text-amber-50"
+    >
+      <div
+        class="ml-auto [&>h2]:prose-2xl [&>h2]:text4x1 [&>h2]:mt-4 [&>h2]:my-2 [&>h2]:!text-amber-50 [&>h2]:text-right"
+      >
+        <h1 class="prose-2xl text-6xl text-right !text-amber-50">
+          Ventajas de su uso
+        </h1>
+
+        <p
+          class="prose-md max-w-4/6 text-xl pb-5 text-right !text-amber-50 ml-auto"
+        >
+          Los componentes de Astro son bloques de construcción en proyectos
+          Astro, identificables por su extensión .astro. Son flexibles y pueden
+          incluir UI reutilizable, fragmentos de HTML o etiquetas para SEO,
+          además de layouts de página. Se renderizan a HTML en tiempo de
+          compilación o mediante SSR, sin dejar huella de JavaScript en el
+          cliente.
+        </p>
+
+        <p class="prose-md max-w-4/6 text-xl text-right !text-amber-50 ml-auto">
+          Astro renderiza a HTML puro, pre-renderizando páginas y rutas como
+          estáticas durante la compilación. También permite renderizado bajo
+          demanda (SSR), que se genera en cada visita y personaliza la
+          información para cada usuario, como datos de cuentas autenticadas.
+          Esta opción permite mostrar datos actualizados sin necesidad de
+          reconstruir todo el sitio.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Image -->
+  <img
+    src={functionality.src}
+    alt="EstefanoC Pulpoline Integration"
+    class="w-2/5 h-2/5 -bottom-15 -left-15 absolute"
+  />
+  <img
+    src={backgroundColor.src}
+    alt="EstefanoC Pulpoline Background"
+    class="w-screen h-screen top-0 left-0 blur-[80px] opacity-40 absolute -z-10"
+  />
+
+  <img
+    src={backgroundColor.src}
+    alt="EstefanoC Pulpoline Background"
+    class="w-screen h-screen -bottom-200 -right-150 blur-[40px] opacity-20 rotate-90 absolute -z-10"
+  />
+</div>
