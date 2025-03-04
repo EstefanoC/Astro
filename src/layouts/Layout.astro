@@ -1,4 +1,6 @@
 ---
+import { ClientRouter } from 'astro:transitions'
+
 import Header from '../components/Header.astro'
 ---
 
@@ -10,12 +12,17 @@ import Header from '../components/Header.astro'
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>EstefanoC | Astro</title>
+    <ClientRouter />
+    <link href="/styles/prism.css" rel="stylesheet" />
+    <script src="../cdn/prism.js"></script>
   </head>
   <body
-    class="min-h-screen min-w-screen bg-gray-900 bg-linear-to-b to-gray-900 to-55% from-amber-50/10"
+    class="min-h-screen min-w-screen overflow-x-hidden bg-gray-900 bg-linear-to-b to-gray-900 to-55% from-amber-50/10 bg-no-repeat"
   >
     <Header />
-    <slot />
+    <main class="pt-16">
+      <slot />
+    </main>
   </body>
 </html>
 

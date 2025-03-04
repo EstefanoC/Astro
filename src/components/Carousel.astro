@@ -5,19 +5,17 @@ import Slide3 from './Slides/slide3.astro'
 import Slide4 from './Slides/slide4.astro'
 ---
 
-<div
-  class="swiper w-screen h-[calc(theme(height.screen)-theme(spacing.16))] top-16"
->
+<div class="swiper w-screen h-[calc(theme(height.screen)-theme(spacing.16))]">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
-    <!-- Slides 4 -->
-    <div class="swiper-slide"><Slide4 /></div>
     <!-- Slides 1 -->
     <div class="swiper-slide"><Slide1 /></div>
     <!-- Slides 2 -->
     <div class="swiper-slide"><Slide2 /></div>
     <!-- Slides 3 -->
     <div class="swiper-slide"><Slide3 /></div>
+    <!-- Slides 4 -->
+    <div class="swiper-slide"><Slide4 /></div>
   </div>
 
   <!-- If we need scrollbar -->
